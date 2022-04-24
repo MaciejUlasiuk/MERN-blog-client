@@ -31,3 +31,24 @@
       
       object-fit: cover;
   }
+
+  @media screen and (max-width: 425px)
+  {
+    .headerTitleSm{
+      font-size: 40px;
+    }
+    .headerTitleLg{
+      font-size: 60px;
+    }
+    
+  }
+  @media screen and (max-width: 325px)
+  {
+    .headerTitleSm{
+      font-size: 35px;
+    }
+    .headerTitleLg{
+      font-size: 55px;
+    }
+    
+  }
