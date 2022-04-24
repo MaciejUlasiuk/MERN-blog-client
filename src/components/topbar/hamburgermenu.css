@@ -1,0 +1,31 @@
+.hamburgerMenu ul{
+    position: fixed;
+    right: 0;
+    top: 40px;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    background-color: white;
+}
+.hamburgerMenu li{
+    padding: 20px;
+}
+.hamburgerMenu{
+    
+    
+    
+}
+.topListt {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .topListItemm {
+    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 300;
+    cursor: pointer;
+  }

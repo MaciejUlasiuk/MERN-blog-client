@@ -1,0 +1,94 @@
+.post {
+    min-width: 50vw;
+    max-width: 50vw;
+    min-height: 20vh;
+    margin: 0px 25px 40px 25px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.5s linear, border 0.5s linear;
+    display: flex;
+    flex-direction: column;
+    
+    
+    padding: 5%;
+    
+   
+  }
+  
+  .postImg {
+    position: relative;
+    width: 100%;
+    min-height: 20%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .postInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .postCat {
+    font-family: "Varela Round", sans-serif;
+    font-size: 3%;
+    color: #be9656;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .postTitle {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .postDate {
+    font-family: "Lora", serif;
+    font-style: italic;
+    font-size: 13px;
+    color: #999;
+    margin-top: 15px;
+  }
+  
+  .postDesc {
+    font-family: "Varela Round", sans-serif;
+    font-size: 14px;
+    color: #444;
+    line-height: 24px;
+    margin-top: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    
+  }
+  .postAuthor{
+    font-family: "Varela Round", sans-serif;
+    text-align: end;
+    margin-top: 10px;
+  }
+
+  .post:hover{
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+  @media screen and (max-width: 768px)
+  {
+    .post{
+      min-width: 250px;
+    min-height: 200px;
+    margin: 0;
+    margin-bottom: 1.5rem;
+    overflow: hidden;
+    }
+  }

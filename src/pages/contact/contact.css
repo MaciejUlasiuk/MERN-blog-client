@@ -1,0 +1,67 @@
+.contact-wrapper{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(230, 230, 230), rgb(246, 250, 255), rgb(207, 207, 207));
+    background-size: 400% 400%;
+}
+.contact-heading{
+    font-size: 2rem;
+    margin: 4%;
+    font-family: 'Merriweather', serif;
+}
+.contact-element{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 50%;
+    border-radius: 10px;
+    font-family: 'Merriweather', serif;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.textInput{
+    padding: 10px;
+    display: block;
+    margin-top: 20%;
+    margin-bottom: 20%;
+    min-width: 20vw;
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.messageArea{
+    height: 10vh;
+}
+.contactButton{
+    
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: white;
+    
+}
+
+.contactButton:hover{
+    border: 1px solid black;
+}
+.btnwrap{
+    display: flex;
+    justify-content: end;
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .contact-element{
+        min-width: 90%;
+        min-height: 60vh;
+    }
+}
