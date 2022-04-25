@@ -2,13 +2,14 @@
     min-width: 50vw;
     max-width: 50vw;
     min-height: 20vh;
-    margin: 0px 25px 40px 25px;
+    margin: 0px 0px 40px 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border-radius: 10px;
     cursor: pointer;
     transition: transform 0.5s linear, border 0.5s linear;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     
     
     padding: 5%;

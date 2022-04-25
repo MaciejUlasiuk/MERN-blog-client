@@ -77,6 +77,9 @@
     .topListItem{
       display: none;
     }
+    .topCenterFooter{
+      display: none;
+    }
     span.menu{
       display: block;
     }

@@ -54,7 +54,12 @@
 }
 .btnwrap{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
+}
+
+.contact-modal-text{
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 
@@ -63,5 +68,9 @@
     .contact-element{
         min-width: 90%;
         min-height: 60vh;
+        margin-top: 40px;
+    }
+    .contact-wrapper{
+        justify-content:start;
     }
 }

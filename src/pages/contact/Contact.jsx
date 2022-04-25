@@ -1,13 +1,14 @@
 import "./contact.css";
 import emailjs from "@emailjs/browser";
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 const Contact = () => {
   const form = useRef();
+  const [modalText, setModalText] = useState("");
+  const [color, setColor] = useState("green");
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_gfvjguh",
@@ -17,14 +18,22 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          if (result.status === 200) setModalText("Email has been sent!");
         },
         (error) => {
+          setModalText("There was some error, please try again!");
+          setColor("red");
           console.log(error.text);
         }
       );
     form.current.reset();
   };
+
+  const modalTextComponent = modalText ? (
+    <p className="contact-modal-text" style={{ color: color }}>
+      {modalText}
+    </p>
+  ) : null;
   return (
     <>
       <div className="contact-wrapper">
@@ -52,6 +61,8 @@ const Contact = () => {
                   className="textInput"
                   placeholder="Your message..."
                 />
+
+                {modalTextComponent}
 
                 <div className="btnwrap">
                   <button className="contactButton" type="submit">
