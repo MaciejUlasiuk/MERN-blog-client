@@ -26,6 +26,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+  }
+  .sidebarItem p, .sidebarItem span{
+    text-align: center;
   }
   
   .sidebarTitle {
@@ -86,3 +90,4 @@
   .footerIcon{
     margin-left: 20px;
   }
+  
