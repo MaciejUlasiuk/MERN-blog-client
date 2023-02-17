@@ -34,8 +34,8 @@
   }
   
   .postCat {
-    font-family: "Varela Round", sans-serif;
-    font-size: 3%;
+    font-family: 'Roboto', sans-serif;
+        font-size: 3%;
     color: #be9656;
     line-height: 20px;
     margin-top: 15px;
@@ -44,8 +44,8 @@
   }
   
   .postTitle {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+        font-size: 2rem;
     font-weight: 700;
     padding: 10px;
     cursor: pointer;
@@ -60,8 +60,9 @@
   }
   
   .postDesc {
-    font-family: "Varela Round", sans-serif;
-    font-size: 14px;
+    font-family: 'Roboto', sans-serif;    font-size: 14px;
+    word-wrap: break-word;
+    width: 30em  ;
     color: #444;
     line-height: 24px;
     margin-top: 15px;
@@ -71,6 +72,10 @@
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     
+  }
+  .postDescBox{
+    display: flex;
+    justify-content: center;
   }
   .postAuthor{
     font-family: "Varela Round", sans-serif;
