@@ -1,6 +1,9 @@
 .singlePost {
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     
+    align-items: center;
   }
   
   .singlePostWrapper {
@@ -22,9 +25,14 @@
     margin: 10px;
     padding: 30px;
     font-family: "Lora", serif;
-    font-size: 28px;
+    font-size: 40px;
   }
   
+  .singlePostDescBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .singlePostTitleInput {
     margin: 10px;
     font-family: "Lora", serif;
@@ -62,7 +70,7 @@
     display: flex;
     justify-content: space-between;
     font-size: 16px;
-    font-family: "Varela Round", sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #b39656;
   }
   
@@ -70,6 +78,8 @@
     color: #666;
     font-size: 18px;
     line-height: 25px;
+    width: 30em;
+    font-family: 'Roboto', sans-serif;
   }
   
   .singlePostDesc::first-letter {

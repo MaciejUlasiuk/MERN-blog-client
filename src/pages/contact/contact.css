@@ -5,12 +5,13 @@
     align-items: center;
     justify-content: center;
     background: linear-gradient(-45deg, rgb(255, 255, 255), rgb(230, 230, 230), rgb(246, 250, 255), rgb(207, 207, 207));
-    background-size: 400% 400%;
+    
+    background-image: url(/src/components/imgs/cnme.jpg);
 }
 .contact-heading{
     font-size: 2rem;
     margin: 4%;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', serif;
 }
 .contact-element{
     background-color: white;
@@ -21,7 +22,7 @@
     min-height: 80vh;
     min-width: 50%;
     border-radius: 10px;
-    font-family: 'Merriweather', serif;
+    font-family: 'Roboto', serif;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .textInput{

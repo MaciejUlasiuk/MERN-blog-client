@@ -94,7 +94,9 @@ export default function SinglePost() {
             onChange={(e) => setDesc(e.target.value)}
           />
         ) : (
-          <p className="singlePostDesc">{desc}</p>
+          <div className="singlePostDescBox">
+            <p className="singlePostDesc">{desc}</p>
+          </div>
         )}
         {updateMode && (
           <button className="singlePostButton" onClick={handleUpdate}>
