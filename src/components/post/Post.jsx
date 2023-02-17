@@ -20,7 +20,9 @@ export default function Post({ post }) {
             {new Date(post.createdAt).toDateString()}
           </span>
         </div>
-        <p className="postDesc">{post.desc}</p>
+        <div className="postDescBox">
+          <p className="postDesc">{post.desc}</p>
+        </div>
         {post.workTime ? (
           <p className="postAuthor">Learning time: {post.workTime}</p>
         ) : null}
