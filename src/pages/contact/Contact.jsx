@@ -50,7 +50,7 @@ const Contact = () => {
                 />
 
                 <input
-                  type="text"
+                  type="email"
                   name="email"
                   className="textInput"
                   placeholder="Your email..."
