@@ -17,7 +17,7 @@ export default function TopBar() {
         <Link className="link topListItemVisible" to="/">
           Blog
         </Link>
-        <a href="https://github.com/MaciejUlasiuk">
+        <a href="https://github.com/MaciejUlasiuk" target={"_blank"}>
           <i className="topIcon fab fa-github"></i>
         </a>
       </div>
@@ -29,7 +29,7 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to="/">
+            <Link className="link" to="/about">
               ABOUT
             </Link>
           </li>
