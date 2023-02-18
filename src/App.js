@@ -9,11 +9,13 @@ import { HashRouter, Routes, Route,  } from "react-router-dom";
 import { useContext } from "react";
 import { Context } from "./context/Context";
 import Contact from "./pages/contact/Contact";
-
+import AboutMe from "./pages/aboutme/AboutMe";
+import ScrollToTop from "./components/scrollToTop";
 function App() {
   const { user } = useContext(Context);
   return (
     <HashRouter>
+      <ScrollToTop/>
       <TopBar />
       <Routes>
         <Route exact path="/" element={<Home/>}/>
@@ -24,6 +26,7 @@ function App() {
         <Route path="/settings" element={user ? <Settings /> : <Register />}/>
         <Route path="/post/:postId" element={<Single />}/>
         <Route path="/contact" element={<Contact/>}/>
+        <Route path="/about" element={<AboutMe/>}/>
       
       </Routes>
     </HashRouter>
