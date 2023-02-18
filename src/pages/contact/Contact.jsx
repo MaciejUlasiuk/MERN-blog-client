@@ -55,7 +55,6 @@ const Contact = () => {
                   className="textInput"
                   placeholder="Your email..."
                 />
-
                 <textarea
                   name="message"
                   className="textInput"
