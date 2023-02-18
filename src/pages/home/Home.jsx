@@ -6,6 +6,7 @@ import "./home.css";
 
 import { useLocation } from "react-router";
 import request from "../../helpers/request";
+import Loader from "../../components/loader/Loader";
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const { search } = useLocation();
@@ -21,7 +22,7 @@ export default function Home() {
     <>
       <Header />
       <div className="home">
-        <Posts posts={posts} />
+        {posts.length > 0 ? <Posts posts={posts} /> : <Loader />}
         <Sidebar />
       </div>
     </>
