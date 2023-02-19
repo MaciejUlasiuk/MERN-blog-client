@@ -18,7 +18,7 @@ const HamburgerMenu = () => {
             </Link>
           </li>
           <li className="topListItemm">
-            <Link className="link" to="/">
+            <Link className="link" to="/about">
               ABOUT
             </Link>
           </li>
