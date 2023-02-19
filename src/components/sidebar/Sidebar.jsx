@@ -31,7 +31,7 @@ export default function Sidebar() {
               </Link>
             </li>
             <li className="topListItem footerItem">
-              <Link className="link" to="/about">
+              <Link className="link" to="/ax">
                 ABOUT
               </Link>
             </li>
