@@ -6,9 +6,18 @@ const Contact = () => {
   const form = useRef();
   const [modalText, setModalText] = useState("");
   const [color, setColor] = useState("green");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
-  const sendEmail = (e) => {
+  const checkInputs = (e) => {
     e.preventDefault();
+    if (!name || !email || !message) {
+      setModalText("Inputs cannot be empty!");
+      setColor("red");
+    } else sendEmail();
+  };
+  const sendEmail = () => {
     emailjs
       .sendForm(
         "service_gfvjguh",
@@ -18,7 +27,10 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          if (result.status === 200) setModalText("Email has been sent!");
+          if (result.status === 200) {
+            setModalText("Email has been sent!");
+            setColor("green");
+          }
         },
         (error) => {
           setModalText("There was some error, please try again!");
@@ -41,10 +53,12 @@ const Contact = () => {
           <h1 className="contact-heading">Contact me!</h1>
           <section className="wrapper">
             <section className="inputs">
-              <form ref={form} onSubmit={sendEmail}>
+              <form ref={form} onSubmit={checkInputs}>
                 <input
                   type="text"
                   name="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   className="textInput"
                   placeholder="Your name..."
                 />
@@ -52,11 +66,15 @@ const Contact = () => {
                 <input
                   type="email"
                   name="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="textInput"
                   placeholder="Your email..."
                 />
                 <textarea
                   name="message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                   className="textInput"
                   placeholder="Your message..."
                 />
