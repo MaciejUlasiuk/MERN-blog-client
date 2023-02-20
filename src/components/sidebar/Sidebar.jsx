@@ -14,7 +14,7 @@ export default function Sidebar() {
       <div className="sidebarItem">
         <span>ABOUT ME</span>
 
-        <p>Hi! My name is Maciek and i'm 19 years old developer wannabe</p>
+        <p>Hi! My name is Maciek and i'm 21 years old developer wannabe</p>
         <span>
           Find more of my work on my github:{" "}
           <a href="https://github.com/MaciejUlasiuk">
